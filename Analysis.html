@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5000/analysis -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Analysis</title>
+    <link href="./Analysis_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Analysis_files/main.css">
+</head>
+<body style="font-family: Arial; text-align:center">
+    <h1 style="text-align: center; margin-top:50px;">Analysis of whatsapp chat sample_chat.txt</h1>
+
+    <div style="margin-top:50px;" class="container text-center">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-3">
+            <h3>Total Messages: 13655</h3>
+        </div>
+        <div class="col col-lg-3">
+            <h3>Total words: 83155</h3>
+        </div>
+        <div class="col col-lg-3">
+          <h3>Active Users: 154</h3>
+        </div>
+          <div class="col col-lg-3">
+          <h3>Links Shared: 727</h3>
+        </div>
+
+      </div>
+
+     </div>
+
+
+    <div style="margin-top:50px;" class="activity">
+        <div style="margin: 30px">
+            <h2>Daily Activity over a period of time</h2>
+            <img src="./Analysis_files/daily_activity.png" alt="plot" height="600" width="600">
+<!--            <object data="static/images/daily_activity.png" width="800" height="800"> </object>-->
+        </div>
+        <div style="margin:30px;">
+            <h2>Most active days</h2>
+            <img src="./Analysis_files/top10_days.png" alt="plot" height="600" width="600">
+        </div>
+        <div style="margin: 30px">
+            <h2>Hourly Acitivty</h2>
+            <img src="./Analysis_files/hourly_activity.png" alt="plot" height="600" width="600">
+        </div>
+
+        <div style="margin: 30px">
+            <h2>Monthly Activity</h2>
+            <img src="./Analysis_files/monthly_activity.png" alt="plot" height="600" width="600">
+        </div>
+        <div style="margin: 30px">
+            <h2>Most active useres</h2>
+            <table class="fl-table" style="border:1px solid black; margin-left:auto; margin-right:auto; margin-bottom:50px;">
+                <thead>
+                  <tr>
+                    
+                    <th>
+                      user
+                    </th>
+                    
+                    <th>
+                      message
+                    </th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    
+                    <td>Tanay Kamath (TSEC, CS)</td>
+                    
+                    <td>2528</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Dheeraj Lalwani (TSEC, CS)</td>
+                    
+                    <td>1937</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Darshan Rander (TSEC, IT)</td>
+                    
+                    <td>1404</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Kartik Soneji (TSEC, CS)</td>
+                    
+                    <td>841</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Harsh Kapadia (TSEC IT, SE)</td>
+                    
+                    <td>790</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Pratik K (TSEC CS, SE)</td>
+                    
+                    <td>781</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Saurav Upoor (TSEC CS, SE)</td>
+                    
+                    <td>569</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Tushar Nankani</td>
+                    
+                    <td>354</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 82916 21138</td>
+                    
+                    <td>275</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Farhan Irani (TSEC IT, SE)</td>
+                    
+                    <td>255</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97681 67131</td>
+                    
+                    <td>245</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 88284 70904</td>
+                    
+                    <td>206</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97739 65140</td>
+                    
+                    <td>153</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Saket (TSEC, CS)</td>
+                    
+                    <td>153</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99693 94098</td>
+                    
+                    <td>140</td>
+                    
+                  </tr>
+                  
+                    </tbody>
+            </table>
+<!--            <img src="static/images/top_users_df.png" alt="plot" height="450" width="300">-->
+        </div>
+        <div style="margin: 20px">
+
+            <img src="./Analysis_files/most_active_users.png" alt="plot" height="600" width="600">
+        </div>
+
+        <div style="margin: 20px">
+            <h2 style="margin-top:30px;">Most used words - WORDCLOUD</h2>
+            <img src="./Analysis_files/word_cloud.png" alt="plot" height="500" width="450">
+        </div>
+    </div>
+
+    <div style="margin-top:50px;">
+        <div style="margin-top:50px;">
+            <img src="./Analysis_files/pie_chart.png" alt="pie_chart" height="500px" width="500px">
+        </div>
+        <div>
+            <h2 style="margin-bottom:50px; margin-top:50px;">Sentiment of Users</h2>
+            <table class="fl-table" style="border:1px solid black; margin-left:auto; margin-right:auto; margin-bottom:50px;">
+                <thead>
+                  <tr>
+                    
+                    <th>
+                      User_Name
+                    </th>
+                    
+                    <th>
+                      Sentiment
+                    </th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    
+                    <td>+91 96536 93868</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Dheeraj Lalwani (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99201 75875</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 95949 08570</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 79778 76844</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 90499 38860</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Tanay Kamath (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Saket (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77568 95072</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Rohit Pathak (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 75078 05454</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Darshan Rander (TSEC, IT)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 79774 68083</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 70394 60876</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 96191 55044</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 90678 93300</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Mohit Varma (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 79770 56210</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Chirag Sharma (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Vivek Iyer (TSEC, Biomed)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Tushar Nankani</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 81696 22410</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 89764 07509</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 78758 66747</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Ankit (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 86556 33169</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 76663 28147</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 88284 70904</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97698 67348</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Vivek (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Hardik Raheja (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91680 38866</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Pranay Thakur (TSEC, CS)</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Mittul Dasani (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Kartik Soneji (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77180 43697</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99676 84479</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Shreya (TSEC, IT)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 96190 16721</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 89833 85127</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 82080 02653</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99675 58551</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 90822 59476</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Prithvi Rohira (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 90820 98830</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Mohammed (TSEC, EXTC)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 96992 89993</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 83690 21693</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 75064 86714</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Pratik K (TSEC CS, SE)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Farhan Irani (TSEC IT, SE)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77000 27264</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Harsh Kapadia (TSEC IT, SE)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Saurav Upoor (TSEC CS, SE)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77180 82108</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 86559 19035</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77150 51136</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91671 28174</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 84335 18102</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 84529 62233</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 81080 96759</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77384 72938</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 93243 92133</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97681 67131</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98206 01141</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 84540 03063</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99693 94098</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91363 39446</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98192 22032</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 88305 26885</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 70208 31915</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98702 02065</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 88282 22720</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97027 35002</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 87796 52381</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97739 65140</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97571 15289</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Rishab Saini (TSEC CS, TE)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 94208 78848</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 93598 18687</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 73043 57388</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98331 51331</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 80979 84068</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77158 99478</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 79776 23387</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99697 55118</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 95119 48511</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98337 61116</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 82916 21138</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 88889 97733</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97697 60869</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99672 39663</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 87796 70896</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98191 73361</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 70219 80066</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 81696 11905</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 72762 35231</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 79775 35465</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97027 04646</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 70450 40641</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99204 26955</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99696 99151</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98333 66146</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 95940 62134</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77189 86205</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97694 89970</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99302 21772</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77109 79055</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 96648 44643</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98337 47258</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Keyul Jain (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98198 16330</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 88798 05171</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 92842 87810</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 72495 29889</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91677 97590</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Trushant Narwani (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 86528 77025</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77383 38799</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Shubham Chettiar (TSEC CS, TE)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 86059 72817</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 83292 66084</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 82080 03744</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98670 44401</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77098 73262</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Sahil A (TSEC, CS-B)</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 96194 00980</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99304 97064</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 77699 70908</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98337 26449</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97847 88658</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 82916 40581</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91670 43943</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 94044 50783</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 90821 58843</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 97022 69539</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 73036 41107</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 88795 52797</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Akash Khatri (TSEC, CS)</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91525 25452</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 79778 03985</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91725 67828</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98206 14506</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 70218 25025</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 94200 70678</td>
+                    
+                    <td>positive</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 99203 34360</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 96374 40537</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98199 01072</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91673 86883</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 73032 50500</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 91362 39673</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98501 32687</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>Kritanjali</td>
+                    
+                    <td>neutral</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    
+                    <td>+91 98709 38217</td>
+                    
+                    <td>negative</td>
+                    
+                  </tr>
+                  
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+</body></html>
